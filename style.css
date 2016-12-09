@@ -1,3 +1,19 @@
 body {
   font-family: 'Scope One', serif;
 }
+
+#main-title {
+  margin: auto;
+  text-align: center;
+  color: #000000; 
+}
+
+#title-description {
+  padding-top: 500px;
+}
+
+#landing {
+  height: 50%;
+  width: 100%;
+  background-color: #eaba72;
+}
