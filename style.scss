@@ -53,6 +53,14 @@ a {
         }
     }
 
+    .hero {
+        padding-top: 220px;
+
+        .container {
+            display: flex;
+        }
+    }
+
     a {
         display: block;
         line-height: 36px;
@@ -74,6 +82,8 @@ a {
         color: #fff;
         font-size: 1em;
         font-weight: normal;
+        margin-top: 0;
+        padding-top: 20px;
         text-shadow: 0 0 10px #000;
     }
 }
