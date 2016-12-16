@@ -1,6 +1,10 @@
 $normal-font-size: 16px;
 $smaller-font-size: 14px;
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
     font-size: $normal-font-size;
@@ -13,6 +17,9 @@ a {
 }
 
 .container {
+    box-sizing: content-box;
+    margin: 0 auto;
+    max-width: 960px;
     padding: 0 12px;
 }
 
@@ -24,6 +31,11 @@ a {
         margin: 0;
         padding: 0.5em 0;
         text-align: center;
+
+        img {
+            display: table;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -32,8 +44,13 @@ a {
     font-size: $smaller-font-size;
 
     &__list {
+        list-style: none;
         margin: 0;
         padding: 0;
+
+        a {
+            padding: 0 20px;
+        }
     }
 
     a {
@@ -92,5 +109,15 @@ a {
 }
 
 @media (min-width: 640px) {
-    
+    .header {
+        .container {
+            display: flex;
+        }
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+        }
+    }
 }
