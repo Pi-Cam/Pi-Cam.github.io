@@ -9,6 +9,9 @@ a {
 
 .header {
     background: #f9b74e;
+    &__heading {
+        text-align: center;
+    }
 }
 
 .nav {
