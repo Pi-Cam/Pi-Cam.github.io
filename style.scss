@@ -64,6 +64,7 @@ a {
 .details {
     background: #f9e2bd;
     padding: 40px 0;
+    text-align: center;
 
     &__list {
         list-style: none;
@@ -71,4 +72,25 @@ a {
         padding: 0;
         width: 75%;
     }
+
+    &__item {
+        margin-bottom: 30px;
+        padding-top: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h2 {
+        margin: 0 0 0.25em;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (min-width: 640px) {
+    
 }
