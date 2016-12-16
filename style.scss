@@ -1,14 +1,24 @@
+$normal-font-size: 16px;
+$smaller-font-size: 14px;
+
 body {
     font-family: sans-serif;
+    font-size: $normal-font-size;
     margin: 0;
 }
 
 a {
     color: #fdf2e1;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 12px;
 }
 
 .header {
     background: #f9b74e;
+    font-size: $smaller-font-size;
     padding: 0.5em 0;
     &__heading {
         margin: 0;
@@ -18,6 +28,7 @@ a {
 
 .nav {
     background: #ffa10a;
+    font-size: $smaller-font-size;
 
     &__list {
         margin: 0;
@@ -26,7 +37,7 @@ a {
 
     a {
         display: block;
-        height: 36px;
+        line-height: 36px;
         text-align: center;
     }
 }
@@ -35,6 +46,11 @@ a {
     background: url('assets/hands-technology-photo-phone.jpg') 50% no-repeat;
     &__content {
         background: rgba(0, 0, 0, 0.25);
+    }
+    &__heading {
+        color: #fff;
+        font-size: 30px;
+        text-shadow: 0 0 10px #000;
     }
 }
 
