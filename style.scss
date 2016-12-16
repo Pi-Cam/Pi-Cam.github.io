@@ -4,18 +4,31 @@ body {
 }
 
 a {
-    color: #f9e2bd;
+    color: #fdf2e1;
 }
 
 .header {
     background: #f9b74e;
+    padding: 0.5em 0;
     &__heading {
+        margin: 0;
         text-align: center;
     }
 }
 
 .nav {
     background: #ffa10a;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        display: block;
+        height: 36px;
+        text-align: center;
+    }
 }
 
 .hero {
