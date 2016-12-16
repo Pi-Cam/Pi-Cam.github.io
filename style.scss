@@ -22,6 +22,7 @@ a {
     padding: 0.5em 0;
     &__heading {
         margin: 0;
+        padding: 0.5em 0;
         text-align: center;
     }
 }
@@ -44,16 +45,30 @@ a {
 
 .hero {
     background: url('assets/hands-technology-photo-phone.jpg') 50% no-repeat;
+    font-size: 30px;
+    text-align: center;
+
     &__content {
         background: rgba(0, 0, 0, 0.25);
+        padding-bottom: 0.5em;
     }
+
     &__heading {
         color: #fff;
-        font-size: 30px;
+        font-size: 1em;
+        font-weight: normal;
         text-shadow: 0 0 10px #000;
     }
 }
 
 .details {
     background: #f9e2bd;
+    padding: 40px 0;
+
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 75%;
+    }
 }
