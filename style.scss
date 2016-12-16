@@ -1,0 +1,133 @@
+$normal-font-size: 16px;
+$smaller-font-size: 14px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: $normal-font-size;
+    margin: 0;
+}
+
+a {
+    color: #fdf2e1;
+    text-decoration: none;
+}
+
+.container {
+    box-sizing: content-box;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 12px;
+}
+
+.header {
+    background: #f9b74e;
+    font-size: $smaller-font-size;
+    padding: 0.5em 0;
+    &__heading {
+        margin: 0;
+        padding: 0.5em 0;
+        text-align: center;
+
+        img {
+            display: table;
+            margin: 0 auto;
+        }
+    }
+}
+
+.nav {
+    background: #ffa10a;
+    font-size: $smaller-font-size;
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+            padding: 0 20px;
+        }
+    }
+
+    .hero {
+        padding-top: 220px;
+
+        .container {
+            display: flex;
+        }
+    }
+
+    a {
+        display: block;
+        line-height: 36px;
+        text-align: center;
+    }
+}
+
+.hero {
+    background: url('assets/hands-technology-photo-phone.jpg') 50% no-repeat;
+    font-size: 30px;
+    text-align: center;
+
+    &__content {
+        background: rgba(0, 0, 0, 0.25);
+        padding-bottom: 0.5em;
+    }
+
+    &__heading {
+        color: #fff;
+        font-size: 1em;
+        font-weight: normal;
+        margin-top: 0;
+        padding-top: 20px;
+        text-shadow: 0 0 10px #000;
+    }
+}
+
+.details {
+    background: #f9e2bd;
+    padding: 40px 0;
+    text-align: center;
+
+    &__list {
+        list-style: none;
+        margin: 0 auto;
+        padding: 0;
+        width: 75%;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        padding-top: 60px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    h2 {
+        margin: 0 0 0.25em;
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (min-width: 640px) {
+    .header {
+        .container {
+            display: flex;
+        }
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+        }
+    }
+}
